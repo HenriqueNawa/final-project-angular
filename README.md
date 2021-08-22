@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">&nbsp;
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 
-### Objetivo: Desenvolver um projeto de tema livre e aplicar os conhecimentos adquiridos em aula.
+### Objetivo: Desenvolver um projeto Angular 2+ com tema livre e aplicar os conhecimentos adquiridos no curso.
 
 ### Itens aprendidos e aplicados ao projeto
 - Event Binding, Property Bindind e Interpolação
@@ -13,8 +13,8 @@
 - Componentes e uso do Angular CLI
 - Pages
 - Services
-- Pipes, currency uppercase, telephone
-- Uso do Angular Material para cards
+- Pipes (currency, uppercase e telefone)
+- Uso do Angular Material para cards, grid para organizar os cards e Clipboard para copiar texto
 - Uso do PrimeNG para galeria de fotos
 - Uso do Git 
 
@@ -22,10 +22,15 @@
 - Angular 2+
 - IDE (VSCode ou outro)
 - Node
-- NPM
+- NPM 
+
+### Minhas configurações
+- Angular 12
+- Node v14.17.3
+- NPM v6.14.13
 
 ### Descrição do projeto
-O tema do projeto escolhido foi um sistema Imobiliário para expor imóveis para venda ou locação.
+O tema do projeto escolhido foi criar um sistema Imobiliário para expor imóveis para venda ou locação.
 
 ### Instruções para Uso
 - Clonar o repositório para seu computador
