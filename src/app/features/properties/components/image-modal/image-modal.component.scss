@@ -1,0 +1,33 @@
+
+.example-card {
+    // max-width: 400px;
+    align-items: center;
+    text-align: center;
+    width:400px !important;
+    margin: 0 auto;
+}
+
+img{
+    // max-width:500px;
+    // max-height:500px;
+    width: auto;
+    height: 500px;
+}
+
+mat-card-header{
+    text-align: left;
+}
+
+.postcards {
+    max-width: 320px;
+}
+
+ng-template{
+    align-items: center;
+}
+
+#teste{
+    margin:0 auto
+}
+
+  

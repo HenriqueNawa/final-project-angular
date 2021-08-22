@@ -1,0 +1,10 @@
+<p-galleria [value]="imagens" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5"> 
+   <ng-template pTemplate="item" let-item *ngFor="let item of imagens; let i = index">
+      <img [src]="item" style="width: 100%;" />
+  </ng-template>
+  <ng-template pTemplate="thumbnail" let-item *ngFor="let item of imagens; let i = index">
+      <div class="p-grid p-nogutter p-justify-center">
+        <button class="btn btn-primary"></button>
+      </div>
+  </ng-template>
+</p-galleria>

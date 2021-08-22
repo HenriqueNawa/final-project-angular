@@ -1,0 +1,36 @@
+<mat-grid-list cols="3">
+  <mat-grid-tile *ngFor="let item of imoveis" [ngSwitch]="item.status">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{ item?.title | uppercase }}</mat-card-title>
+        <mat-card-subtitle *ngSwitchCase="'COMPRA'"
+          >{{ item?.status | uppercase }} -
+          {{ item?.buyPrice | currency: "BRL" }}
+        </mat-card-subtitle>
+        <mat-card-subtitle *ngSwitchCase="'ALUGUEL'"
+          >{{ item?.status | uppercase }} -
+          {{ item?.loanPrice | currency: "BRL" }}
+        </mat-card-subtitle>
+        <mat-card-subtitle *ngSwitchCase="'COMPRA/ALUGUEL'">
+          COMPRA - {{ item.buyPrice | currency: "BRL" }}/ ALUGUEL -
+          {{ item.loanPrice | currency: "BRL" }}
+        </mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{ item?.mainImage }}" />
+      <mat-card-content>
+        <p>
+          {{ item?.description }}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button
+          mat-button
+          (click)="redirecionar(item.id)"
+          class="btn btn-primary"
+        >
+          Ver mais
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

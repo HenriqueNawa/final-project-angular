@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="card text-center" *ngIf="imovel" [ngSwitch]="imovel.status">
+  <div class="card-header">
+    <h1 *ngSwitchCase="'COMPRA'">
+      {{ imovel.title }} - {{ imovel.status }} - 
+      {{ imovel.buyPrice | currency: "BRL" }}
+    </h1>
+    <h1 *ngSwitchCase="'ALUGUEL'">
+      {{ imovel.title }} - {{ imovel.status }} - 
+      {{ imovel.loanPrice | currency: "BRL" }}
+    </h1>
+    <h1 *ngSwitchCase="'COMPRA/ALUGUEL'">
+      {{ imovel.title }} - COMPRA - {{imovel.buyPrice | currency: "BRL"}}/ 
+      ALUGUEL - {{imovel.loanPrice | currency: "BRL"}}
+    </h1>
+    <h2>Descrição</h2>
+    <h4>{{ imovel.description }}</h4>
+  </div>
+  <div class="card-body">
+    <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center" >
+      <app-image-modal></app-image-modal>
+    </div>
+   
+    <div class="card-footer text-muted">
+      <h2><b>Localização</b></h2>
+      <h4>Logradouro: {{ imovel.logradouro }}</h4>
+      <h4>Bairro: {{ imovel.bairro }}</h4>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</div>
