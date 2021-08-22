@@ -13,7 +13,9 @@
 - Componentes e uso do Angular CLI
 - Pages
 - Services
-- Pipes, currency e uppercase
+- Pipes, currency uppercase, telephone
+- Uso do Angular Material para cards
+- Uso do PrimeNG para galeria de fotos
 - Uso do Git 
 
 ### Pré-Requisitos
@@ -22,7 +24,7 @@
 - Node
 - NPM
 
-### Descrição do sistema
+### Descrição do projeto
 O tema do projeto escolhido foi um sistema Imobiliário para expor imóveis para venda ou locação.
 
 ### Instruções para Uso
