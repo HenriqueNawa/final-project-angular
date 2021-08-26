@@ -25,8 +25,6 @@ const components = [
     PropertiesModule, 
     RealtorModule, 
     GalleriaModule,
-    
-  
 ]
 
 @NgModule({
